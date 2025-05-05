@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Estem - Institut de Logística de Barcelona</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="fondo">
+    <!-- Menú superior -->
+    <header class="menu_superior">
+        <nav class="boton">
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link"><button class="abc">Inici</button></a></li>
+                <li><a href="onestem.html" class="nav-link"><button class="abc">On estem</button></a></li>
+                <li><a href="estudis.html" class="nav-link"><button class="abc">Estudis</button></a></li>
+                <li><a href="contacte.html" class="nav-link"><button class="abc">Contacte</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contingut principal -->
+    <main class="contenido-principal">
+        <section class="menu_onestem">
+            <h1 class="colortext titulo-principal">UBICACIÓ DEL CENTRE</h1>
+            <p class="colortext descripcion">
+                L'Institut de Logística de Barcelona es troba ubicat al World Trade Center de Barcelona,
+                situat al port de la ciutat.<br>
+                L'institut està dividit en vàries seccions dintre del WTC: a l'edifici principal es troba
+                la seu principal a la part sud, i a la part nord està secretaria. A l'edifici EM Nord,
+                Planta 1a, es troba la seu secundària.
+            </p>
+        </section>
+
+        <!-- Div del mapa -->
+        <div class="contenedor-mapa-info">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2204.409745075207!2d2.180815029623415!3d41.37192236906058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1739389061474!5m2!1ses!2ses"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Mapa de ubicació de l'Institut de Logística de Barcelona">
+                </iframe>
+            </div>
+            <div class="info_onestem">
+                <h2 class="colortext titulo-info">INSTITUT DE LOGÍSTICA DE BARCELONA</h2>
+                <p class="colortext">
+                    <strong>Codi centre:</strong> 08077991<br>
+                    <strong>WTCB</strong><br>
+                    Moll de Barcelona, s/n<br>
+                    Edifici Sud, Local 27<br>
+                    08039 Barcelona
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección de tus datos personales -->
+            <div class="footer-section">
+                <h3 class="footer-title">Dades Personals</h3>
+                <ul class="footer-list">
+                    <li><strong>Nom:</strong> Xavi Franco García</li>
+                    <li><strong>Email:</strong> <a href="mailto:xfranco23@ilb.cat">xfranco23@ilb.cat</a></li>
+                    <li><strong>Ubicació:</strong> Barcelona, España</li>
+                </ul>
+            </div>
+    
+            <!-- Sección de los datos del instituto -->
+            <div class="footer-section">
+                <h3 class="footer-title">Institut de Logística de Barcelona</h3>
+                <ul class="footer-list">
+                    <li><strong>Direcció:</strong> World Trade Center, Barcelona</li>
+                    <li><strong>Email:</strong> <a href="mailto:ilb@xtec.cat">ilb@xtec.cat</a></li>
+                    <li><strong>Teléfono:</strong> <a href="tel:+93 118 12 88">+93 118 12 88</a></li>
+
+                    <li>
+                        <strong>Instagram:</strong>
+                        <a href="https://www.instagram.com/ilbcat/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i> @ilbcat
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Derechos de autor -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Institut de Logística de Barcelona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

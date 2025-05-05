@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici - Institut de Logística de Barcelona</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="fondo">
+    <!-- Menú superior -->
+    <header class="menu_superior">
+        <nav class="boton">
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link"><button class="abc">Inici</button></a></li>
+                <li><a href="onestem.html" class="nav-link"><button class="abc">On estem</button></a></li>
+                <li><a href="estudis.html" class="nav-link"><button class="abc">Estudis</button></a></li>
+                <li><a href="contacte.html" class="nav-link"><button class="abc">Contacte</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteningut principal -->
+    <main class="contenido-principal">
+        <div class="Principal">
+            <h1 class="nombre_insti">Institut de Logística de Barcelona</h1>
+            <p class="texto_1">
+                L’Institut de Logística de Barcelona arrenca la seva activitat al setembre de 2022 (curs 2022-2023). No obstant, segueix l’estela d’altres centres de similars característiques a l’entorn europeu i internacional.<br>
+                Estem davant d’un projecte altament anhelat per l’ecosistema portuari i necessari per al procés d’internacionalització empresarial.<br>
+                Durant l’any 2018, s’estudien els perfils professionals més demandats, així com els perfils emergents, per donar resposta a les necessitats pròpies d’aquest cluster.<br>
+                Aquests treballs formen part dels orígens de l’actual projecte educatiu, configurant un catàleg formatiu i de serveis, que ha de permetre formar als/les professionals del sector, treballant en xarxa dins de l’àmbit professional d’activitats empresarials i logístiques.<br>
+                Durant el 2022, el projecte es veu impulsat amb la col·laboració conjunta del Consorci d’Educació de Barcelona i el Port de Barcelona, establint un partenariat sòlid i de futur, que es veu materialitzat en l’institut de formació professional integrada de Logística de Barcelona.
+            </p>
+        </div>
+
+        <!-- Carrusel de imatges -->
+        <div class="container_carrousel">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <img id="img1" src="Media/Captura de pantalla 2025-02-08 165413.jpg" alt="Imagen 1">
+                    <img id="img1" src="Media/Captura de pantalla 2025-02-08 165413.png" alt="Imagen 1">
+                    <img id="img1" src="Media/Captura de pantalla 2025-02-08 GFGFFGDF.jpg" alt="Imagen 1">
+                    <img id="img1" src="Media/Captura de pantalla 2025-02-08 198769876.jpg" alt="Imagen 1">
+                    <img id="img1" src="Media/Captura de pantalla 2025-02-08 GGHGFJ.jpg" alt="Imagen 1">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección de tus datos personales -->
+            <div class="footer-section">
+                <h3 class="footer-title">Dades Personals</h3>
+                <ul class="footer-list">
+                    <li><strong>Nom:</strong> Xavi Franco García</li>
+                    <li><strong>Email:</strong> <a href="mailto:xfranco23@ilb.cat">xfranco23@ilb.cat</a></li>
+                    <li><strong>Ubicació:</strong> Barcelona, España</li>
+                </ul>
+            </div>
+    
+            <!-- Sección de los datos del instituto -->
+            <div class="footer-section">
+                <h3 class="footer-title">Institut de Logística de Barcelona</h3>
+                <ul class="footer-list">
+                    <li><strong>Direcció:</strong> World Trade Center, Barcelona</li>
+                    <li><strong>Email:</strong> <a href="mailto:ilb@xtec.cat">ilb@xtec.cat</a></li>
+                    <li><strong>Teléfono:</strong> <a href="tel:+93 118 12 88">+93 118 12 88</a></li>
+
+                    <li>
+                        <strong>Instagram:</strong>
+                        <a href="https://www.instagram.com/ilbcat/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i> @ilbcat
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Derechos de autor -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Institut de Logística de Barcelona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Script para el menú hamburguesa -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
